@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0e0e0e;
+    color: #f1f1f1;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    border-bottom: 1px solid #222;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #2ecc71;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.btn-nav {
+    border: 1px solid #2ecc71;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #000, #111);
+    padding-top: 70px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: #2ecc71;
+    color: #000;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+.large {
+    font-size: 18px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 0;
+    background: #0e0e0e;
+}
+
+.section.dark {
+    background: #141414;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* LIST */
+.list {
+    margin-top: 20px;
+}
+
+.list li {
+    margin-bottom: 12px;
+    list-style: square;
+    margin-left: 20px;
+}
+
+/* CTA */
+.cta {
+    padding: 100px 0;
+    background: linear-gradient(to top, #000, #111);
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background: #000;
+}
+
+/* ANIMATION */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .nav {
+        display: none;
+    }
+}
